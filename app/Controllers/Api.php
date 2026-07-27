@@ -177,6 +177,86 @@ class Api extends BaseController
         ]);
     }
 
+    /**
+     * Order / enquiry status lookup.
+     *
+     * Customers don't have accounts — they identify their orders with the same
+     * email or phone number they gave when submitting the enquiry. We match on
+     * either field and return their enquiry history with a friendly status.
+     */
+    public function track()
+    {
+        $data = $this->request->getJSON(true) ?? [];
+        $id   = trim((string) ($data['identifier'] ?? ''));
+
+        if ($id === '') {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Please enter the email or phone number you used for your order.',
+            ]);
+        }
+
+        $isEmail = filter_var($id, FILTER_VALIDATE_EMAIL) !== false;
+        $digits  = preg_replace('/\D+/', '', $id); // phone digits only
+
+        if (! $isEmail && strlen($digits) < 6) {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Please enter a valid email address or phone number.',
+            ]);
+        }
+
+        $db      = db_connect();
+        $builder = $db->table('enquiries')
+            ->select('customerName, productName, quantity, preferredUnit, preferredDate, status, createdAt')
+            ->groupStart();
+
+        if ($isEmail) {
+            $builder->where('LOWER(email)', mb_strtolower($id));
+        }
+        if (strlen($digits) >= 6) {
+            // Match the phone ignoring spaces, dashes, parentheses and the + sign.
+            $builder->orWhere(
+                "REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(phone, ' ', ''), '-', ''), '(', ''), ')', ''), '+', '') LIKE '%" . $digits . "%'",
+                null,
+                false
+            );
+        }
+        $builder->groupEnd();
+
+        // Contact-form messages are stored in the same table — exclude them.
+        $rows = $builder
+            ->notLike('productName', 'Contact:', 'after')
+            ->orderBy('createdAt', 'DESC')
+            ->limit(50)
+            ->get()->getResultArray();
+
+        // Customer-facing labels for the internal enquiry statuses.
+        $labels = [
+            'NEW'       => 'Order received',
+            'CONTACTED' => 'Being processed',
+            'CLOSED'    => 'Completed',
+        ];
+
+        $orders = array_map(static function ($r) use ($labels) {
+            return [
+                'productName'   => $r['productName'],
+                'quantity'      => $r['quantity'],
+                'unit'          => $r['preferredUnit'],
+                'status'        => $r['status'],
+                'statusLabel'   => $labels[$r['status']] ?? $r['status'],
+                'date'          => $r['createdAt'] ? date('M j, Y', strtotime($r['createdAt'])) : '',
+                'preferredDate' => $r['preferredDate'] ? date('M j, Y', strtotime($r['preferredDate'])) : null,
+            ];
+        }, $rows);
+
+        return $this->response->setJSON([
+            'success' => true,
+            'name'    => $rows[0]['customerName'] ?? '',
+            'orders'  => $orders,
+        ]);
+    }
+
     public function contact()
     {
         $data = $this->request->getJSON(true) ?? [];

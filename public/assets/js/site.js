@@ -609,6 +609,103 @@
     });
   }
 
+  // ── Order tracking ─────────────────────────────────────────
+  function initOrderTracking() {
+    var form = $("[data-track-form]");
+    if (!form) return;
+    var errorEl = $("[data-track-error]");
+    var resultsEl = $("[data-track-results]");
+
+    var STATUS_STYLES = {
+      NEW: "bg-accent-50 text-accent-600",
+      CONTACTED: "bg-brand-50 text-brand-700",
+      CLOSED: "bg-brand-100 text-brand-800",
+    };
+
+    function orderCard(o) {
+      var badgeClass = STATUS_STYLES[o.status] || "bg-black/5 text-ink-soft";
+      var qty = [o.quantity, o.unit].filter(Boolean).join(" ");
+      var preferred = o.preferredDate
+        ? '<span class="text-ink-soft">Preferred delivery: <span class="font-medium text-ink">' + escapeHtml(o.preferredDate) + "</span></span>"
+        : "";
+      return (
+        '<div class="rounded-2xl border border-black/5 bg-white p-5 shadow-card">' +
+        '<div class="flex flex-wrap items-start justify-between gap-3">' +
+        '<div>' +
+        '<h3 class="font-bold text-ink">' + escapeHtml(o.productName) + "</h3>" +
+        (qty ? '<p class="mt-0.5 text-sm text-ink-soft">Quantity: <span class="font-medium text-ink">' + escapeHtml(qty) + "</span></p>" : "") +
+        "</div>" +
+        '<span class="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold ' + badgeClass + '">' + escapeHtml(o.statusLabel) + "</span>" +
+        "</div>" +
+        '<div class="mt-3 flex flex-wrap gap-x-5 gap-y-1 border-t border-black/5 pt-3 text-xs">' +
+        '<span class="text-ink-soft">Ordered: <span class="font-medium text-ink">' + escapeHtml(o.date) + "</span></span>" +
+        preferred +
+        "</div>" +
+        "</div>"
+      );
+    }
+
+    function renderEmpty(id) {
+      return (
+        '<div class="rounded-3xl border border-dashed border-black/10 bg-white p-10 text-center">' +
+        '<h3 class="text-lg font-bold text-ink">No orders found</h3>' +
+        '<p class="mx-auto mt-2 max-w-md text-sm text-ink-soft">We couldn\'t find any orders for <span class="font-medium text-ink">' +
+        escapeHtml(id) +
+        "</span>. Double-check the email or phone number you used when placing your order.</p>" +
+        "</div>"
+      );
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var identifier = form.elements.identifier.value.trim();
+
+      var btn = $("[data-track-submit]", form);
+      var idle = $("[data-track-submit-idle]", form);
+      var busy = $("[data-track-submit-busy]", form);
+      btn.disabled = true;
+      idle.style.display = "none";
+      busy.style.display = "inline-flex";
+      errorEl.classList.add("hidden");
+
+      fetch(BASE + "/api/track", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ identifier: identifier }),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (res) {
+          if (!res.success) {
+            errorEl.textContent = res.message;
+            errorEl.classList.remove("hidden");
+            resultsEl.innerHTML = "";
+            return;
+          }
+          if (!res.orders || res.orders.length === 0) {
+            resultsEl.innerHTML = renderEmpty(identifier);
+            return;
+          }
+          var heading =
+            '<div class="mb-4 flex items-baseline justify-between gap-3">' +
+            '<h2 class="text-lg font-bold text-ink">' +
+            (res.name ? "Hi " + escapeHtml(res.name) + " — your" : "Your") +
+            " orders</h2>" +
+            '<span class="text-sm text-ink-soft">' + res.orders.length + (res.orders.length === 1 ? " order" : " orders") + "</span>" +
+            "</div>";
+          resultsEl.innerHTML = heading + '<div class="space-y-3">' + res.orders.map(orderCard).join("") + "</div>";
+        })
+        .catch(function () {
+          errorEl.textContent = "Something went wrong. Please try again.";
+          errorEl.classList.remove("hidden");
+        })
+        .finally(function () {
+          btn.disabled = false;
+          idle.style.display = "";
+          busy.style.display = "none";
+        });
+    });
+  }
+
   // ── Hero slider ────────────────────────────────────────────
   var AUTOPLAY_MS = 6000;
 
@@ -876,6 +973,7 @@
     initBuyButtons();
     initNewsletter();
     initContactForm();
+    initOrderTracking();
     initHeroSlider();
     initProductTabs();
     initGallery();
