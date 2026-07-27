@@ -1,0 +1,1133 @@
+{
+  "categories": [
+    {
+      "name": "Vegetables",
+      "slug": "vegetables",
+      "description": "Farm-fresh vegetables harvested daily and quality checked.",
+      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1200&auto=format&fit=crop",
+      "isFeatured": true,
+      "children": [
+        {
+          "name": "Leafy Vegetables",
+          "slug": "leafy-vegetables",
+          "description": "Crisp greens picked at dawn.",
+          "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "name": "Root Vegetables",
+          "slug": "root-vegetables",
+          "description": "Earthy roots full of flavour.",
+          "image": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "name": "Fruits",
+      "slug": "fruits",
+      "description": "Sweet, juicy fruits from trusted orchards.",
+      "image": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1200&auto=format&fit=crop",
+      "isFeatured": true,
+      "children": [
+        {
+          "name": "Exotic Fruits",
+          "slug": "exotic-fruits",
+          "description": "Rare and tropical picks.",
+          "image": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "name": "Seasonal Fruits",
+          "slug": "seasonal-fruits",
+          "description": "The best of every season.",
+          "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "name": "Fresh Meat",
+      "slug": "fresh-meat",
+      "description": "Premium cuts, hygienically processed and chilled.",
+      "image": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=1200&auto=format&fit=crop",
+      "isFeatured": true,
+      "children": [
+        {
+          "name": "Chicken",
+          "slug": "chicken",
+          "description": "Farm-raised, antibiotic-free chicken.",
+          "image": "https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "name": "Mutton",
+          "slug": "mutton",
+          "description": "Tender premium mutton cuts.",
+          "image": "https://images.unsplash.com/photo-1603048297172-c92544798d5a?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "name": "Beef",
+          "slug": "beef",
+          "description": "Grass-fed premium beef.",
+          "image": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "name": "Seafood",
+      "slug": "seafood",
+      "description": "Ocean-fresh catch, delivered on ice.",
+      "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop",
+      "isFeatured": true,
+      "children": [
+        {
+          "name": "Fish",
+          "slug": "fish",
+          "description": "Daily catch from coastal waters.",
+          "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "name": "Prawns",
+          "slug": "prawns",
+          "description": "Sweet, succulent prawns.",
+          "image": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "name": "Crab",
+          "slug": "crab",
+          "description": "Live and fresh crabs.",
+          "image": "https://images.unsplash.com/photo-1559737558-2f5a35f4523b?q=80&w=1200&auto=format&fit=crop"
+        }
+      ]
+    },
+    {
+      "name": "Eggs",
+      "slug": "eggs",
+      "description": "Free-range and farm eggs collected daily.",
+      "image": "https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=1200&auto=format&fit=crop",
+      "isFeatured": true
+    },
+    {
+      "name": "Dairy",
+      "slug": "dairy",
+      "description": "Fresh milk, cheese, butter and yogurt.",
+      "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=1200&auto=format&fit=crop",
+      "isFeatured": true
+    },
+    {
+      "name": "Frozen Foods",
+      "slug": "frozen-foods",
+      "description": "Flash-frozen goodness, ready when you are.",
+      "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "name": "Organic Products",
+      "slug": "organic-products",
+      "description": "Certified organic produce and pantry staples.",
+      "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop",
+      "isFeatured": true
+    },
+    {
+      "name": "Spices",
+      "slug": "spices",
+      "description": "Aromatic whole and ground spices.",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "name": "Dry Fruits",
+      "slug": "dry-fruits",
+      "description": "Premium nuts and dried fruits.",
+      "image": "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=1200&auto=format&fit=crop"
+    }
+  ],
+  "products": [
+    {
+      "name": "Vine-Ripened Tomatoes",
+      "slug": "vine-ripened-tomatoes",
+      "category": "vegetables",
+      "shortDescription": "Juicy, deep-red tomatoes ripened naturally on the vine.",
+      "description": "Our vine-ripened tomatoes are picked at peak maturity for maximum sweetness and that unmistakable garden aroma. Ideal for salads, sauces, and everyday cooking. Sourced daily from partner farms and quality checked before dispatch.",
+      "price": 2.49,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g",
+        "500 g",
+        "1 Kg",
+        "2 Kg",
+        "5 Kg"
+      ],
+      "isFeatured": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 18 kcal, Carbs 3.9g, Protein 0.9g, Fat 0.2g, Vitamin C 21% DV, Potassium 237mg",
+      "storageInstructions": "Store at room temperature away from direct sunlight. Refrigerate only when fully ripe.",
+      "origin": "Local partner farms",
+      "images": [
+        "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1561136594-7f68413baa99?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Broccoli Crowns",
+      "slug": "broccoli-crowns",
+      "category": "vegetables",
+      "shortDescription": "Tight, deep-green crowns cut fresh every morning.",
+      "description": "Crisp, nutrient-dense broccoli crowns with firm stems and compact florets. Steam, roast, or stir-fry — the flavour holds beautifully. Harvested and chilled within hours.",
+      "price": 3.29,
+      "discountPrice": 2.79,
+      "onOffer": true,
+      "unit": "Kg",
+      "weightOptions": [
+        "500 g",
+        "1 Kg",
+        "2 Kg"
+      ],
+      "isPopular": true,
+      "nutrition": "Per 100g: 34 kcal, Carbs 6.6g, Protein 2.8g, Fat 0.4g, Vitamin C 148% DV, Vitamin K 127% DV",
+      "storageInstructions": "Refrigerate unwashed in a perforated bag. Best within 4 days.",
+      "origin": "Highland farms",
+      "images": [
+        "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Organic Carrots",
+      "slug": "organic-carrots",
+      "category": "root-vegetables",
+      "shortDescription": "Sweet, crunchy carrots grown without synthetic inputs.",
+      "description": "Certified organic carrots with a naturally sweet bite. Perfect for juicing, roasting, or snacking. Grown in mineral-rich soil and hand-sorted for uniform quality.",
+      "price": 1.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g",
+        "500 g",
+        "1 Kg",
+        "2 Kg",
+        "5 Kg"
+      ],
+      "isOrganic": true,
+      "isPopular": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 41 kcal, Carbs 9.6g, Protein 0.9g, Fat 0.2g, Vitamin A 334% DV",
+      "storageInstructions": "Remove tops and refrigerate in a sealed bag for up to 3 weeks.",
+      "origin": "Certified organic farms",
+      "images": [
+        "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1447175008436-054170c2e979?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Baby Spinach",
+      "slug": "baby-spinach",
+      "category": "leafy-vegetables",
+      "shortDescription": "Tender baby spinach leaves, triple-washed and ready.",
+      "description": "Delicate baby spinach picked young for tenderness. Triple-washed and packed cold, it goes straight from bag to bowl. A salad and smoothie essential.",
+      "price": 2.79,
+      "unit": "Pack",
+      "weightOptions": [
+        "200 g Pack",
+        "500 g Pack",
+        "1 Kg Box"
+      ],
+      "isFeatured": true,
+      "isFresh": true,
+      "isOrganic": true,
+      "nutrition": "Per 100g: 23 kcal, Carbs 3.6g, Protein 2.9g, Fat 0.4g, Iron 15% DV, Folate 49% DV",
+      "storageInstructions": "Keep refrigerated at 1–4°C. Consume within 3 days of opening.",
+      "origin": "Hydroponic greenhouse",
+      "images": [
+        "https://images.unsplash.com/photo-1576045057995-568f588f82fb?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Curly Kale",
+      "slug": "curly-kale",
+      "category": "leafy-vegetables",
+      "shortDescription": "Robust curly kale bunches bursting with nutrients.",
+      "description": "Deep-green curly kale with a hearty texture that stands up to sautéing, baking into chips, or massaging into salads. A true superfood staple.",
+      "price": 2.49,
+      "unit": "Bundle",
+      "isNewArrival": true,
+      "isOrganic": true,
+      "nutrition": "Per 100g: 35 kcal, Carbs 4.4g, Protein 2.9g, Fat 1.5g, Vitamin K 390% DV, Vitamin C 120% DV",
+      "storageInstructions": "Wrap in damp paper towel and refrigerate. Use within 5 days.",
+      "origin": "Local organic farms",
+      "images": [
+        "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Russet Potatoes",
+      "slug": "russet-potatoes",
+      "category": "root-vegetables",
+      "shortDescription": "Fluffy, versatile potatoes ideal for roasting and mash.",
+      "description": "Classic russet potatoes with a high-starch flesh that bakes fluffy and fries crisp. Graded and brushed clean, available in retail and wholesale quantities.",
+      "price": 1.49,
+      "unit": "Kg",
+      "weightOptions": [
+        "1 Kg",
+        "2 Kg",
+        "5 Kg",
+        "10 Kg Sack",
+        "25 Kg Sack"
+      ],
+      "isPopular": true,
+      "nutrition": "Per 100g: 79 kcal, Carbs 18g, Protein 2.1g, Fat 0.1g, Potassium 417mg",
+      "storageInstructions": "Store in a cool, dark, well-ventilated place. Do not refrigerate.",
+      "origin": "Valley farms",
+      "images": [
+        "https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Red Onions",
+      "slug": "red-onions",
+      "category": "root-vegetables",
+      "shortDescription": "Sharp, sweet red onions with glossy skins.",
+      "description": "Firm red onions with a balanced sharp-sweet flavour, perfect raw in salads or caramelised. Sun-cured for longer shelf life.",
+      "price": 1.79,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g",
+        "500 g",
+        "1 Kg",
+        "2 Kg",
+        "5 Kg"
+      ],
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 40 kcal, Carbs 9.3g, Protein 1.1g, Fat 0.1g, Vitamin C 12% DV",
+      "storageInstructions": "Store in a cool, dry, dark place with good airflow.",
+      "origin": "Regional farms",
+      "images": [
+        "https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Rainbow Bell Peppers",
+      "slug": "rainbow-bell-peppers",
+      "category": "vegetables",
+      "shortDescription": "A trio of red, yellow and green peppers.",
+      "description": "Crisp, glossy bell peppers in a vibrant mixed pack. Sweet enough to eat raw, sturdy enough for grilling and stuffing. Greenhouse-grown for consistent quality year round.",
+      "price": 4.49,
+      "discountPrice": 3.99,
+      "onOffer": true,
+      "unit": "Pack",
+      "weightOptions": [
+        "3-Piece Pack",
+        "6-Piece Pack",
+        "5 Kg Box"
+      ],
+      "isFeatured": true,
+      "isPopular": true,
+      "nutrition": "Per 100g: 31 kcal, Carbs 6g, Protein 1g, Fat 0.3g, Vitamin C 213% DV",
+      "storageInstructions": "Refrigerate in crisper drawer. Best within 7 days.",
+      "origin": "Greenhouse grown",
+      "images": [
+        "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "English Cucumbers",
+      "slug": "english-cucumbers",
+      "category": "vegetables",
+      "shortDescription": "Cool, crisp cucumbers with thin, tender skin.",
+      "description": "Long English cucumbers with barely-there seeds and refreshing crunch. Individually wrapped to lock in moisture and freshness.",
+      "price": 1.29,
+      "unit": "Piece",
+      "isFresh": true,
+      "nutrition": "Per 100g: 15 kcal, Carbs 3.6g, Protein 0.7g, Fat 0.1g, 95% water content",
+      "storageInstructions": "Refrigerate. Keep wrapped until use.",
+      "origin": "Greenhouse grown",
+      "images": [
+        "https://images.unsplash.com/photo-1604977042946-1eecc30f269e?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Cauliflower Heads",
+      "slug": "cauliflower-heads",
+      "category": "vegetables",
+      "shortDescription": "Snow-white heads with tight, heavy curds.",
+      "description": "Dense, creamy-white cauliflower heads trimmed of outer leaves. Roast whole, rice it, or blitz into a silky purée. Field-fresh and chilled promptly.",
+      "price": 2.99,
+      "unit": "Piece",
+      "isNewArrival": true,
+      "nutrition": "Per 100g: 25 kcal, Carbs 5g, Protein 1.9g, Fat 0.3g, Vitamin C 80% DV",
+      "storageInstructions": "Refrigerate stem-side down in an open bag. Use within 5 days.",
+      "origin": "Highland farms",
+      "images": [
+        "https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Royal Gala Apples",
+      "slug": "royal-gala-apples",
+      "category": "fruits",
+      "shortDescription": "Crisp, honey-sweet apples with a rosy blush.",
+      "description": "Hand-picked Royal Gala apples with a fine, crisp bite and floral sweetness. Cold-stored at optimal humidity so every apple crunches like harvest day.",
+      "price": 3.49,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g",
+        "500 g",
+        "1 Kg",
+        "2 Kg",
+        "5 Kg"
+      ],
+      "isFeatured": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 52 kcal, Carbs 14g, Protein 0.3g, Fat 0.2g, Fiber 2.4g",
+      "storageInstructions": "Refrigerate for longest life; room temperature for best flavour.",
+      "origin": "Mountain orchards",
+      "images": [
+        "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Cavendish Bananas",
+      "slug": "cavendish-bananas",
+      "category": "fruits",
+      "shortDescription": "Naturally ripened bananas, sweet and creamy.",
+      "description": "Premium Cavendish bananas ripened naturally without artificial agents. Perfect for breakfast, baking, and smoothies. Sold by the dozen or wholesale by the box.",
+      "price": 1.59,
+      "unit": "Dozen",
+      "weightOptions": [
+        "6 Pieces",
+        "1 Dozen",
+        "13 Kg Box"
+      ],
+      "isPopular": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 89 kcal, Carbs 23g, Protein 1.1g, Fat 0.3g, Potassium 358mg",
+      "storageInstructions": "Store at room temperature. Refrigerate only when fully ripe.",
+      "origin": "Tropical plantations",
+      "images": [
+        "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1603833665858-e61d17a86224?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Valencia Oranges",
+      "slug": "valencia-oranges",
+      "category": "fruits",
+      "shortDescription": "Juicy oranges bursting with sunshine.",
+      "description": "Thin-skinned Valencia oranges prized for their juice content and bright, balanced sweetness. Excellent for fresh juice and snacking.",
+      "price": 2.99,
+      "discountPrice": 2.49,
+      "onOffer": true,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g",
+        "500 g",
+        "1 Kg",
+        "2 Kg",
+        "5 Kg"
+      ],
+      "isSeasonal": true,
+      "isPopular": true,
+      "nutrition": "Per 100g: 47 kcal, Carbs 12g, Protein 0.9g, Fat 0.1g, Vitamin C 88% DV",
+      "storageInstructions": "Store at room temperature up to a week, refrigerate for longer.",
+      "origin": "Citrus groves",
+      "images": [
+        "https://images.unsplash.com/photo-1547514701-42782101795e?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Fresh Strawberries",
+      "slug": "fresh-strawberries",
+      "category": "seasonal-fruits",
+      "shortDescription": "Fragrant, ruby-red berries picked at dawn.",
+      "description": "Plump, aromatic strawberries harvested in the cool of the morning and rushed to you the same day. Sweetness you can smell before you taste.",
+      "price": 4.99,
+      "unit": "Box",
+      "weightOptions": [
+        "250 g Punnet",
+        "500 g Punnet",
+        "2 Kg Tray"
+      ],
+      "isFeatured": true,
+      "isSeasonal": true,
+      "isNewArrival": true,
+      "nutrition": "Per 100g: 32 kcal, Carbs 7.7g, Protein 0.7g, Fat 0.3g, Vitamin C 65% DV",
+      "storageInstructions": "Refrigerate unwashed. Wash just before eating. Best within 3 days.",
+      "origin": "Berry farms",
+      "images": [
+        "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1543528176-61b239494933?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Alphonso Mangoes",
+      "slug": "alphonso-mangoes",
+      "category": "seasonal-fruits",
+      "shortDescription": "The king of mangoes — saffron flesh, honeyed aroma.",
+      "description": "Genuine Alphonso mangoes with silky, fiberless flesh and an intoxicating fragrance. Tree-ripened and individually cushioned for transit. A true seasonal delicacy.",
+      "price": 8.99,
+      "unit": "Box",
+      "weightOptions": [
+        "6-Piece Box",
+        "12-Piece Box",
+        "5 Kg Wholesale Crate"
+      ],
+      "isFeatured": true,
+      "isSeasonal": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 60 kcal, Carbs 15g, Protein 0.8g, Fat 0.4g, Vitamin A 21% DV, Vitamin C 60% DV",
+      "storageInstructions": "Ripen at room temperature; refrigerate when soft to the touch.",
+      "origin": "Ratnagiri orchards",
+      "images": [
+        "https://images.unsplash.com/photo-1553279768-865429fa0078?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Seedless Green Grapes",
+      "slug": "seedless-green-grapes",
+      "category": "fruits",
+      "shortDescription": "Crisp, sweet-tart grapes in heavy clusters.",
+      "description": "Refreshing seedless green grapes with a satisfying pop. Chilled straight from the vineyard and perfect for lunchboxes, cheese boards, and juicing.",
+      "price": 3.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "500 g",
+        "1 Kg",
+        "4.5 Kg Box"
+      ],
+      "isPopular": true,
+      "nutrition": "Per 100g: 69 kcal, Carbs 18g, Protein 0.7g, Fat 0.2g, Vitamin K 18% DV",
+      "storageInstructions": "Refrigerate unwashed in original packaging. Rinse before serving.",
+      "origin": "Vineyard estates",
+      "images": [
+        "https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Hass Avocados",
+      "slug": "hass-avocados",
+      "category": "exotic-fruits",
+      "shortDescription": "Buttery avocados, ready to ripen on your counter.",
+      "description": "Creamy Hass avocados with rich, nutty flesh. We ship them firm with a ripening guide so they hit peak buttery perfection exactly when you need them.",
+      "price": 1.99,
+      "unit": "Piece",
+      "weightOptions": [
+        "Single",
+        "4-Piece Pack",
+        "10 Kg Wholesale Box"
+      ],
+      "isFeatured": true,
+      "isPopular": true,
+      "nutrition": "Per 100g: 160 kcal, Carbs 8.5g, Protein 2g, Fat 14.7g (mostly monounsaturated), Potassium 485mg",
+      "storageInstructions": "Ripen at room temperature 2–4 days; refrigerate once ripe.",
+      "origin": "Imported — premium grade",
+      "images": [
+        "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Golden Pineapples",
+      "slug": "golden-pineapples",
+      "category": "exotic-fruits",
+      "shortDescription": "Extra-sweet golden pineapples, field ripened.",
+      "description": "Low-acid, extra-sweet golden pineapples harvested fully mature. The aroma at the base tells you everything — these are ready to eat.",
+      "price": 3.49,
+      "unit": "Piece",
+      "isNewArrival": true,
+      "nutrition": "Per 100g: 50 kcal, Carbs 13g, Protein 0.5g, Fat 0.1g, Vitamin C 79% DV, Manganese 44% DV",
+      "storageInstructions": "Store whole at room temperature 2 days or refrigerate cut pieces.",
+      "origin": "Tropical farms",
+      "images": [
+        "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Fresh Blueberries",
+      "slug": "fresh-blueberries",
+      "category": "exotic-fruits",
+      "shortDescription": "Plump, dusty-blue berries with a sweet burst.",
+      "description": "Hand-raked blueberries with that signature silvery bloom — the mark of careful, minimal handling. Antioxidant-rich and irresistibly snackable.",
+      "price": 5.99,
+      "discountPrice": 4.99,
+      "onOffer": true,
+      "unit": "Box",
+      "weightOptions": [
+        "125 g Punnet",
+        "250 g Punnet",
+        "1 Kg Tray"
+      ],
+      "isNewArrival": true,
+      "isOrganic": true,
+      "nutrition": "Per 100g: 57 kcal, Carbs 14g, Protein 0.7g, Fat 0.3g, Vitamin K 24% DV, high antioxidants",
+      "storageInstructions": "Refrigerate immediately. Wash only before eating.",
+      "origin": "Highland berry farms",
+      "images": [
+        "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1425934398893-310a009a77f9?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Fresh Watermelon",
+      "slug": "fresh-watermelon",
+      "category": "seasonal-fruits",
+      "shortDescription": "Heavy, thump-tested melons with crimson flesh.",
+      "description": "Sun-sweetened watermelons selected by weight and sound — every one guaranteed crisp, red, and dripping with juice. The taste of summer, delivered.",
+      "price": 4.49,
+      "unit": "Piece",
+      "isSeasonal": true,
+      "isPopular": true,
+      "nutrition": "Per 100g: 30 kcal, Carbs 7.6g, Protein 0.6g, Fat 0.2g, Lycopene rich, 92% water",
+      "storageInstructions": "Store whole in a cool place; refrigerate cut melon up to 4 days.",
+      "origin": "River-belt farms",
+      "images": [
+        "https://images.unsplash.com/photo-1563114773-84221bd62daa?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Chicken Breast Fillets",
+      "slug": "chicken-breast-fillets",
+      "category": "chicken",
+      "shortDescription": "Skinless, boneless fillets — lean and versatile.",
+      "description": "Premium skinless chicken breast fillets from farm-raised, antibiotic-free birds. Trimmed by hand, vacuum-chilled, and delivered at a strict 0–4°C cold chain.",
+      "price": 7.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "500 g",
+        "1 Kg",
+        "5 Kg Catering Pack"
+      ],
+      "isFeatured": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 165 kcal, Protein 31g, Fat 3.6g, Carbs 0g",
+      "storageInstructions": "Keep refrigerated 0–4°C, use within 2 days, or freeze up to 3 months.",
+      "origin": "Certified poultry farms",
+      "images": [
+        "https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Whole Chicken (Dressed)",
+      "slug": "whole-chicken-dressed",
+      "category": "chicken",
+      "shortDescription": "Farm-fresh whole chicken, cleaned and dressed.",
+      "description": "Whole dressed chicken, hygienically processed the same morning it arrives. Ideal for roasting and curries. Cut-up options available on request in your enquiry.",
+      "price": 5.49,
+      "unit": "Kg",
+      "weightOptions": [
+        "~1 Kg Bird",
+        "~1.5 Kg Bird",
+        "10-Bird Wholesale Crate"
+      ],
+      "isPopular": true,
+      "nutrition": "Per 100g: 215 kcal, Protein 18g, Fat 15g, Carbs 0g",
+      "storageInstructions": "Keep refrigerated 0–4°C, cook within 2 days of delivery.",
+      "origin": "Certified poultry farms",
+      "images": [
+        "https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Premium Mutton Curry Cut",
+      "slug": "premium-mutton-curry-cut",
+      "category": "mutton",
+      "shortDescription": "Bone-in curry cuts from tender young goat.",
+      "description": "Hand-cut bone-in mutton pieces with the ideal meat-to-bone ratio for rich, slow-cooked curries and biryanis. Sourced from grass-fed, free-range goats.",
+      "price": 14.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "500 g",
+        "1 Kg",
+        "5 Kg Bulk Pack"
+      ],
+      "isFeatured": true,
+      "nutrition": "Per 100g: 143 kcal, Protein 27g, Fat 3g, Iron 20% DV, Vitamin B12 rich",
+      "storageInstructions": "Keep refrigerated 0–4°C, use within 2 days, or freeze up to 4 months.",
+      "origin": "Free-range farms",
+      "images": [
+        "https://images.unsplash.com/photo-1603048297172-c92544798d5a?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Grass-Fed Beef Ribeye",
+      "slug": "grass-fed-beef-ribeye",
+      "category": "beef",
+      "shortDescription": "Marbled ribeye steaks, aged for tenderness.",
+      "description": "Beautifully marbled grass-fed ribeye, wet-aged 14 days for depth of flavour and knife-through tenderness. Cut to order by our master butchers.",
+      "price": 19.99,
+      "discountPrice": 17.99,
+      "onOffer": true,
+      "unit": "Kg",
+      "weightOptions": [
+        "300 g Steak",
+        "500 g",
+        "1 Kg",
+        "Catering Side"
+      ],
+      "isFeatured": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 250 kcal, Protein 26g, Fat 17g, Zinc 43% DV, Vitamin B12 82% DV",
+      "storageInstructions": "Keep refrigerated 0–4°C, cook within 3 days, or freeze up to 6 months.",
+      "origin": "Grass-fed pasture cattle",
+      "images": [
+        "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1603048297172-c92544798d5a?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Lean Beef Mince",
+      "slug": "lean-beef-mince",
+      "category": "beef",
+      "shortDescription": "90% lean mince, ground fresh daily.",
+      "description": "Fresh-ground 90/10 lean beef mince from whole primal cuts — never trimmings. Ground daily in small batches for burgers, bolognese, and kebabs.",
+      "price": 9.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "500 g",
+        "1 Kg",
+        "5 Kg Catering Pack"
+      ],
+      "isPopular": true,
+      "nutrition": "Per 100g: 176 kcal, Protein 20g, Fat 10g, Iron 12% DV",
+      "storageInstructions": "Keep refrigerated 0–4°C, use within 1 day, or freeze up to 3 months.",
+      "origin": "Grass-fed pasture cattle",
+      "images": [
+        "https://images.unsplash.com/photo-1603048297172-c92544798d5a?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Atlantic Salmon Fillets",
+      "slug": "atlantic-salmon-fillets",
+      "category": "fish",
+      "shortDescription": "Center-cut fillets with rich, buttery flesh.",
+      "description": "Premium Atlantic salmon fillets, pin-boned and skin-on for perfect crisping. Delivered on flake ice within hours of cutting. Sashimi-grade available for wholesale.",
+      "price": 16.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g Fillet",
+        "500 g",
+        "1 Kg",
+        "Whole Side"
+      ],
+      "isFeatured": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 208 kcal, Protein 20g, Fat 13g, Omega-3 2.3g, Vitamin D 66% DV",
+      "storageInstructions": "Keep on ice or refrigerated 0–2°C. Cook within 2 days.",
+      "origin": "Cold-water farms",
+      "images": [
+        "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Wild-Caught Tiger Prawns",
+      "slug": "wild-caught-tiger-prawns",
+      "category": "prawns",
+      "shortDescription": "Jumbo tiger prawns, sweet and firm.",
+      "description": "Impressive wild-caught tiger prawns with firm, sweet flesh. Cleaned and deveined on request — just mention it in your enquiry notes. Perfect for grills and biryanis.",
+      "price": 21.99,
+      "discountPrice": 18.99,
+      "onOffer": true,
+      "unit": "Kg",
+      "weightOptions": [
+        "500 g",
+        "1 Kg",
+        "5 Kg Wholesale Block"
+      ],
+      "isFeatured": true,
+      "isPopular": true,
+      "nutrition": "Per 100g: 99 kcal, Protein 24g, Fat 0.3g, Selenium 70% DV",
+      "storageInstructions": "Keep on ice. Cook same day or freeze immediately.",
+      "origin": "Coastal wild catch",
+      "images": [
+        "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Fresh Mud Crabs",
+      "slug": "fresh-mud-crabs",
+      "category": "crab",
+      "shortDescription": "Live mud crabs, heavy with sweet meat.",
+      "description": "Hand-selected live mud crabs graded by weight and fullness. Rich, sweet meat ideal for chilli crab, curries, and steaming. Delivered alive or cleaned to order.",
+      "price": 24.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "500 g Crab",
+        "1 Kg Crab",
+        "5 Kg Wholesale Crate"
+      ],
+      "isNewArrival": true,
+      "nutrition": "Per 100g: 97 kcal, Protein 19g, Fat 1.5g, Vitamin B12 379% DV, Zinc 69% DV",
+      "storageInstructions": "Cook live crabs the same day. Refrigerate cleaned crab max 1 day.",
+      "origin": "Estuary farms",
+      "images": [
+        "https://images.unsplash.com/photo-1559737558-2f5a35f4523b?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Whole Sea Bass",
+      "slug": "whole-sea-bass",
+      "category": "fish",
+      "shortDescription": "Day-boat sea bass, scaled and gutted.",
+      "description": "Delicate, flaky sea bass from day boats — never long-lined or frozen. Scaled, gutted, and ready for the oven or grill. Fillet service available for wholesale orders.",
+      "price": 18.49,
+      "unit": "Kg",
+      "weightOptions": [
+        "~400 g Fish",
+        "~800 g Fish",
+        "10 Kg Wholesale Box"
+      ],
+      "isPopular": true,
+      "nutrition": "Per 100g: 97 kcal, Protein 18g, Fat 2g, Omega-3 0.7g",
+      "storageInstructions": "Keep on ice or at 0–2°C. Cook within 2 days.",
+      "origin": "Day-boat coastal catch",
+      "images": [
+        "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Free-Range Eggs",
+      "slug": "free-range-eggs",
+      "category": "eggs",
+      "shortDescription": "Golden-yolked eggs from pasture-roaming hens.",
+      "description": "Large free-range eggs from hens that roam grassy pastures by day. Deep golden yolks, strong shells, and unbeatable flavour. Collected and graded daily.",
+      "price": 3.99,
+      "unit": "Dozen",
+      "weightOptions": [
+        "6 Eggs",
+        "1 Dozen",
+        "30-Egg Tray",
+        "360-Egg Wholesale Case"
+      ],
+      "isFeatured": true,
+      "isBestSeller": true,
+      "nutrition": "Per egg (50g): 72 kcal, Protein 6.3g, Fat 4.8g, Vitamin D 10% DV, Choline 27% DV",
+      "storageInstructions": "Refrigerate in original carton. Best within 3 weeks.",
+      "origin": "Free-range farms",
+      "images": [
+        "https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Organic Farm Eggs",
+      "slug": "organic-farm-eggs",
+      "category": "eggs",
+      "shortDescription": "Certified organic eggs, small-flock quality.",
+      "description": "Certified organic eggs from small heritage flocks fed an organic, soy-free diet. Rich flavour that shows in every bake and breakfast.",
+      "price": 5.49,
+      "unit": "Dozen",
+      "weightOptions": [
+        "6 Eggs",
+        "1 Dozen",
+        "30-Egg Tray"
+      ],
+      "isOrganic": true,
+      "isNewArrival": true,
+      "nutrition": "Per egg (50g): 70 kcal, Protein 6g, Fat 5g, Omega-3 enriched",
+      "storageInstructions": "Refrigerate in original carton. Best within 3 weeks.",
+      "origin": "Certified organic farms",
+      "images": [
+        "https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Fresh Whole Milk",
+      "slug": "fresh-whole-milk",
+      "category": "dairy",
+      "shortDescription": "Creamy whole milk, pasteurised daily.",
+      "description": "Farm-fresh whole milk gently pasteurised and bottled within hours of milking. Creamy, clean-tasting, and never ultra-processed.",
+      "price": 1.89,
+      "unit": "Litre",
+      "weightOptions": [
+        "500 ml",
+        "1 Litre",
+        "5 Litre Catering",
+        "20 Litre Wholesale"
+      ],
+      "isPopular": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100ml: 61 kcal, Protein 3.2g, Fat 3.3g, Calcium 12% DV",
+      "storageInstructions": "Keep refrigerated at 1–4°C. Consume within 3 days of opening.",
+      "origin": "Local dairy farms",
+      "images": [
+        "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Artisan Cheddar Cheese",
+      "slug": "artisan-cheddar-cheese",
+      "category": "dairy",
+      "shortDescription": "Cloth-bound cheddar, aged 12 months.",
+      "description": "Traditional cloth-bound cheddar aged a full year for a crumbly texture and deep, nutty tang. Cut fresh from the wheel for every order.",
+      "price": 12.99,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g",
+        "500 g",
+        "1 Kg",
+        "Whole Wheel"
+      ],
+      "isFeatured": true,
+      "nutrition": "Per 100g: 403 kcal, Protein 25g, Fat 33g, Calcium 72% DV",
+      "storageInstructions": "Refrigerate wrapped in wax paper. Remove 30 min before serving.",
+      "origin": "Artisan creamery",
+      "images": [
+        "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1552767059-ce182ead6c1b?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Greek Yogurt",
+      "slug": "greek-yogurt",
+      "category": "dairy",
+      "shortDescription": "Thick, strained yogurt with live cultures.",
+      "description": "Authentically strained Greek yogurt — thick enough to hold a spoon upright. Made with whole milk and five live cultures. No thickeners, ever.",
+      "price": 4.49,
+      "unit": "Pack",
+      "weightOptions": [
+        "500 g Tub",
+        "1 Kg Tub",
+        "5 Kg Food-Service Pail"
+      ],
+      "isNewArrival": true,
+      "isPopular": true,
+      "nutrition": "Per 100g: 97 kcal, Protein 9g, Fat 5g, Carbs 4g, Probiotic cultures",
+      "storageInstructions": "Keep refrigerated at 1–4°C. Consume within 5 days of opening.",
+      "origin": "Local creamery",
+      "images": [
+        "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Farmhouse Butter",
+      "slug": "farmhouse-butter",
+      "category": "dairy",
+      "shortDescription": "Slow-churned salted butter, deep yellow.",
+      "description": "Small-batch cultured butter churned from grass-fed cream. Its deep yellow colour and rich flavour come from pasture, not additives.",
+      "price": 6.99,
+      "unit": "Pack",
+      "weightOptions": [
+        "200 g Block",
+        "500 g Block",
+        "5 Kg Catering Block"
+      ],
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 717 kcal, Fat 81g, Vitamin A 68% DV",
+      "storageInstructions": "Refrigerate up to 1 month; freeze up to 6 months.",
+      "origin": "Grass-fed dairy farms",
+      "images": [
+        "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Organic Vegetable Box",
+      "slug": "organic-vegetable-box",
+      "category": "organic-products",
+      "shortDescription": "A curated weekly box of certified organic veg.",
+      "description": "Our farmers' pick of 8–10 seasonal organic vegetables, harvested to order. Contents change weekly with the season — always certified organic, always fresh.",
+      "price": 24.99,
+      "unit": "Box",
+      "weightOptions": [
+        "Small Box (4-5 items)",
+        "Family Box (8-10 items)",
+        "Wholesale Crate"
+      ],
+      "isFeatured": true,
+      "isOrganic": true,
+      "nutrition": "Varies by contents — full breakdown included with each box.",
+      "storageInstructions": "Unpack on arrival; refrigerate leafy items immediately.",
+      "origin": "Certified organic farms",
+      "images": [
+        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Frozen Mixed Berries",
+      "slug": "frozen-mixed-berries",
+      "category": "frozen-foods",
+      "shortDescription": "Strawberries, blueberries & raspberries, flash-frozen.",
+      "description": "A generous mix of whole berries flash-frozen within hours of picking to lock in nutrients and flavour. Smoothie-ready straight from the bag.",
+      "price": 7.49,
+      "unit": "Pack",
+      "weightOptions": [
+        "500 g Bag",
+        "1 Kg Bag",
+        "10 Kg Food-Service Case"
+      ],
+      "isPopular": true,
+      "nutrition": "Per 100g: 42 kcal, Carbs 9g, Protein 0.9g, Fat 0.4g, high antioxidants",
+      "storageInstructions": "Keep frozen at -18°C. Do not refreeze after thawing.",
+      "origin": "Berry farms — flash frozen",
+      "images": [
+        "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Frozen Garden Peas",
+      "slug": "frozen-garden-peas",
+      "category": "frozen-foods",
+      "shortDescription": "Sweet petit pois, frozen within 2 hours of podding.",
+      "description": "Tender garden peas podded and frozen the same morning — sweeter than \"fresh\" peas that have travelled for days. A freezer essential for every kitchen.",
+      "price": 2.99,
+      "unit": "Pack",
+      "weightOptions": [
+        "500 g Bag",
+        "1 Kg Bag",
+        "10 Kg Case"
+      ],
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 81 kcal, Carbs 14g, Protein 5.4g, Fat 0.4g, Fiber 5.7g",
+      "storageInstructions": "Keep frozen at -18°C. Cook from frozen.",
+      "origin": "Valley farms — flash frozen",
+      "images": [
+        "https://images.unsplash.com/photo-1587735243615-c03f25aaff15?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Whole Spice Collection",
+      "slug": "whole-spice-collection",
+      "category": "spices",
+      "shortDescription": "Twelve essential whole spices in one set.",
+      "description": "A curated collection of twelve single-origin whole spices — cumin, coriander, cardamom, cloves, cinnamon and more — packed at source for maximum aroma.",
+      "price": 18.99,
+      "unit": "Box",
+      "weightOptions": [
+        "Starter Set",
+        "Chef's Set",
+        "Wholesale Case"
+      ],
+      "isFeatured": true,
+      "nutrition": "Spice-dependent — rich in essential oils and antioxidants.",
+      "storageInstructions": "Store airtight away from heat and light. Best within 12 months.",
+      "origin": "Single-origin spice estates",
+      "images": [
+        "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Kashmiri Saffron",
+      "slug": "kashmiri-saffron",
+      "category": "spices",
+      "shortDescription": "Grade A+ saffron threads, hand-harvested.",
+      "description": "Deep-crimson Kashmiri saffron threads with an intense aroma and colour yield. Hand-picked at dawn and dried the same day. Lab-tested for purity.",
+      "price": 12.99,
+      "unit": "Pack",
+      "weightOptions": [
+        "1 g Jar",
+        "5 g Jar",
+        "Wholesale on request"
+      ],
+      "isNewArrival": true,
+      "nutrition": "Used in trace amounts; rich in crocin and safranal antioxidants.",
+      "storageInstructions": "Store airtight in a cool, dark place. Potent for 2 years.",
+      "origin": "Kashmir valley",
+      "images": [
+        "https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Premium Almonds",
+      "slug": "premium-almonds",
+      "category": "dry-fruits",
+      "shortDescription": "Crunchy Nonpareil almonds, this season's crop.",
+      "description": "Plump Nonpareil almonds from the current season's harvest — never old stock. Naturally sweet with a clean snap. Available raw or lightly roasted.",
+      "price": 9.99,
+      "discountPrice": 8.49,
+      "onOffer": true,
+      "unit": "Kg",
+      "weightOptions": [
+        "250 g",
+        "500 g",
+        "1 Kg",
+        "10 Kg Wholesale"
+      ],
+      "isPopular": true,
+      "isBestSeller": true,
+      "nutrition": "Per 100g: 579 kcal, Protein 21g, Fat 50g, Fiber 12.5g, Vitamin E 171% DV",
+      "storageInstructions": "Store airtight; refrigerate for 12+ month freshness.",
+      "origin": "Premium orchards",
+      "images": [
+        "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "name": "Mixed Dry Fruit Gift Box",
+      "slug": "mixed-dry-fruit-gift-box",
+      "category": "dry-fruits",
+      "shortDescription": "Almonds, cashews, pistachios, raisins & walnuts.",
+      "description": "An elegant gift box of five premium dry fruits, each in its own compartment. Perfect for festivals, corporate gifting, and generous pantries.",
+      "price": 29.99,
+      "unit": "Box",
+      "weightOptions": [
+        "500 g Box",
+        "1 Kg Box",
+        "Corporate Bulk Order"
+      ],
+      "isFeatured": true,
+      "isNewArrival": true,
+      "nutrition": "Per 100g (mixed): ~550 kcal, Protein 18g, healthy fats, minerals",
+      "storageInstructions": "Store airtight in a cool, dry place. Best within 6 months.",
+      "origin": "Assorted premium origins",
+      "images": [
+        "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  ],
+  "banners": [
+    {
+      "title": "Fresh Vegetables Delivered Every Day",
+      "subtitle": "Harvested at dawn, at your door by lunch. 100% quality-checked produce from partner farms.",
+      "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2000&auto=format&fit=crop",
+      "ctaText": "Shop Now",
+      "ctaLink": "/products?category=vegetables",
+      "sortOrder": 0
+    },
+    {
+      "title": "Farm Fresh Fruits",
+      "subtitle": "Tree-ripened, hand-picked, and bursting with flavour. Wholesale and retail.",
+      "image": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=2000&auto=format&fit=crop",
+      "ctaText": "Shop Now",
+      "ctaLink": "/products?category=fruits",
+      "sortOrder": 1
+    },
+    {
+      "title": "Premium Quality Meat & Seafood",
+      "subtitle": "Cold-chain delivered cuts and ocean-fresh catch, trusted by top restaurants.",
+      "image": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=2000&auto=format&fit=crop",
+      "ctaText": "Shop Now",
+      "ctaLink": "/products?category=fresh-meat",
+      "sortOrder": 2
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Mitchell",
+      "role": "Home Chef",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
+      "rating": 5,
+      "content": "The strawberries actually smell like strawberries. I've stopped going to the supermarket entirely — the enquiry process is quick and their team calls back within the hour.",
+      "sortOrder": 0
+    },
+    {
+      "name": "Chef Marco Rossi",
+      "role": "Head Chef, Trattoria Verde",
+      "avatar": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=200&auto=format&fit=crop",
+      "rating": 5,
+      "content": "We source our entire produce line through FreshMart's wholesale program. Consistent grading, honest pricing, and the cold chain is never broken. Rare in this business.",
+      "sortOrder": 1
+    },
+    {
+      "name": "Priya Nair",
+      "role": "Restaurant Owner",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
+      "rating": 5,
+      "content": "Their mutton and seafood quality is unmatched. Same-day delivery means my menu never has to compromise. Highly recommended for any food business.",
+      "sortOrder": 2
+    },
+    {
+      "name": "David Okafor",
+      "role": "Family Customer",
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop",
+      "rating": 4,
+      "content": "Ordering for a family of six every week. The organic vegetable box is superb value and the kids can actually taste the difference in the fruit.",
+      "sortOrder": 3
+    }
+  ]
+}

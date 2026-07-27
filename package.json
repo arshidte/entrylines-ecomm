@@ -1,0 +1,11 @@
+{
+  "name": "freshmart-ci-assets",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i assets-src/app.css -o public/assets/css/app.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4",
+    "tailwindcss": "^4"
+  }
+}

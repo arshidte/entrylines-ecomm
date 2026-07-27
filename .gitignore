@@ -1,0 +1,11 @@
+.env.production
+node_modules/
+package-lock.json
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/debugbar/*
+!writable/**/index.html
+.DS_Store
+.env
+.htaccess
