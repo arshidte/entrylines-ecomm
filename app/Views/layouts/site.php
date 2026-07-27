@@ -16,6 +16,7 @@ $ogImage     = $meta['ogImage'] ?? null;
 $staticLinks = [
     ['label' => 'Home', 'href' => '/'],
     ['label' => 'Offers', 'href' => '/offers'],
+    ['label' => 'Track Order', 'href' => '/track-order'],
     ['label' => 'About', 'href' => '/about'],
     ['label' => 'Contact', 'href' => '/contact'],
 ];
@@ -48,7 +49,7 @@ $navLink = static function (string $href, string $label, bool $active): string {
     <title><?= esc($title) ?></title>
     <meta name="description" content="<?= esc($description, 'attr') ?>">
     <meta name="keywords" content="<?= esc($keywords, 'attr') ?>">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="<?= esc($meta['robots'] ?? 'index, follow', 'attr') ?>">
     <?php if ($canonical): ?><link rel="canonical" href="<?= esc($canonical, 'attr') ?>"><?php endif ?>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="FreshMart">
@@ -259,6 +260,7 @@ $navLink = static function (string $href, string $label, bool $active): string {
                     $quickLinks = [
                         ['label' => 'All Products', 'href' => 'products'],
                         ['label' => 'Offers', 'href' => 'offers'],
+                        ['label' => 'Track Order', 'href' => 'track-order'],
                         ['label' => 'About Us', 'href' => 'about'],
                         ['label' => 'Contact', 'href' => 'contact'],
                         ['label' => 'Privacy Policy', 'href' => 'privacy'],

@@ -212,6 +212,19 @@ class Site extends BaseController
         ]);
     }
 
+    public function track()
+    {
+        return view('site/track', $this->layoutData() + [
+            'meta' => [
+                'title'       => 'Track My Order — Check Your Enquiry Status | FreshMart',
+                'description' => 'Enter the email or phone number you used when placing your order to view your enquiry history and current status.',
+                'canonical'   => base_url('track-order'),
+                // Order-lookup pages should not be indexed.
+                'robots'      => 'noindex, nofollow',
+            ],
+        ]);
+    }
+
     public function about()
     {
         return view('site/about', $this->layoutData() + [
