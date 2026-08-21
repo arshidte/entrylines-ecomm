@@ -31,6 +31,10 @@ $routes->post('api/contact', 'Api::contact');
 $routes->post('api/newsletter', 'Api::newsletter');
 $routes->get('api/admin/enquiries/export', 'Admin\Enquiries::export', ['filter' => 'adminauth']);
 
+// Meta WhatsApp Cloud API incoming webhook (verification + events).
+$routes->get('api/whatsapp/webhook', 'WhatsAppWebhook::verify');
+$routes->post('api/whatsapp/webhook', 'WhatsAppWebhook::receive');
+
 // ── Admin ───────────────────────────────────────────────────
 $routes->get('admin/login', 'Admin\Auth::login');
 $routes->post('admin/login', 'Admin\Auth::attempt');

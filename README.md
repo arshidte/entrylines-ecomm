@@ -91,6 +91,24 @@ Every new order enquiry can be sent to the owner's WhatsApp. Configure in
    API response. Failures are also logged to `writable/logs/`; a failed
    WhatsApp send never blocks the customer's enquiry.
 
+#### Incoming webhook (messages & statuses)
+
+To receive inbound messages and delivery statuses, register the webhook in
+**App Dashboard → WhatsApp → Configuration**:
+
+- **Callback URL:** `https://<your-domain>/api/whatsapp/webhook`
+- **Verify token:** the value of `WHATSAPP_WEBHOOK_VERIFY_TOKEN` in `.env`
+
+When you click **Verify and save**, Meta sends a GET request; the endpoint
+echoes back its challenge only if the token matches. Then **subscribe to the
+`messages` field** to start receiving events. Every POST is signed with your
+`META_APP_SECRET`; the endpoint validates the `X-Hub-Signature-256` header and
+rejects anything that doesn't match. Inbound messages and statuses are logged
+to `writable/logs/` — extend `WhatsAppWebhook::process()` to store or act on
+them. The endpoint always answers 200 on a valid payload so Meta doesn't retry
+for 7 days. Note: Meta requires a publicly reachable **HTTPS** URL with a valid
+certificate.
+
 ## Deployment on Shared Hosting (hPanel)
 
 1. **Database** — In hPanel create a MySQL database + user, then open
