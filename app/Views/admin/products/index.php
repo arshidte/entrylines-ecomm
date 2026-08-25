@@ -58,7 +58,7 @@
                         </td>
                         <td class="p-4"><?= esc($p['categoryName']) ?></td>
                         <td class="p-4">
-                            <span class="font-semibold"><?= format_price($p['discountPrice'] !== null ? (float) $p['discountPrice'] : (float) $p['price']) ?></span>
+                            <span class="font-semibold"><?= format_price($p['discountPrice'] !== null ? (float) $p['discountPrice'] : (float) $p['price'], false) ?></span>
                             <span class="text-xs text-black/40">/<?= esc($p['unit']) ?></span>
                         </td>
                         <td class="p-4">

@@ -31,6 +31,7 @@ foreach ($quickSlugs as $qs) {
 }
 $currentPath = '/' . trim(service('uri')->getPath(), '/');
 $isProductsActive = str_starts_with($currentPath, '/products') || str_starts_with($currentPath, '/category');
+$curCurrency = \App\Libraries\Currency::current();
 
 $navLink = static function (string $href, string $label, bool $active): string {
     $class = $active
@@ -81,10 +82,22 @@ $navLink = static function (string $href, string $label, bool $active): string {
                     <span class="hidden sm:inline">Same-day delivery on orders before 2 PM —</span>
                     <span>Wholesale &amp; Retail</span>
                 </p>
-                <a href="tel:+393773330007" class="flex items-center gap-1.5 font-medium transition-colors hover:text-accent-400">
-                    <?= lucide('phone-call', 'size-3.5') ?>
-                    +39 377 3330007
-                </a>
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <!-- Currency switcher (USD / EUR) — display-only, converts prices live -->
+                    <div data-currency-switch class="flex items-center gap-0.5 rounded-full bg-white/10 p-0.5 font-semibold" role="group" aria-label="Currency">
+                        <?php foreach (\App\Libraries\Currency::CURRENCIES as $code => $c): $active = $code === $curCurrency; ?>
+                            <button type="button" data-currency-code="<?= esc($code, 'attr') ?>"
+                                    aria-pressed="<?= $active ? 'true' : 'false' ?>"
+                                    class="cursor-pointer rounded-full px-2 py-0.5 leading-none transition-colors <?= $active ? 'bg-white text-brand-800' : 'text-white/80 hover:text-white' ?>">
+                                <?= esc($c['symbol']) ?> <?= esc($c['label']) ?>
+                            </button>
+                        <?php endforeach ?>
+                    </div>
+                    <a href="tel:+393773330007" class="flex items-center gap-1.5 font-medium transition-colors hover:text-accent-400">
+                        <?= lucide('phone-call', 'size-3.5') ?>
+                        <span class="hidden sm:inline">+39 377 3330007</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -446,7 +459,10 @@ $navLink = static function (string $href, string $label, bool $active): string {
     </div>
 </div>
 
-<script>window.FM_BASE = '<?= rtrim(base_url(), '/') ?>';</script>
+<script>
+window.FM_BASE = '<?= rtrim(base_url(), '/') ?>';
+window.FM_CURRENCY = <?= json_encode(\App\Libraries\Currency::jsConfig(), JSON_UNESCAPED_UNICODE) ?>;
+</script>
 <script src="<?= base_url('assets/js/site.js') ?>"></script>
 <?= $this->renderSection('scripts') ?>
 </body>

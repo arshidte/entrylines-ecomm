@@ -13,8 +13,31 @@
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $all(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
 
+  // Converts a USD amount into the visitor's selected currency and returns a
+  // span carrying the USD base value, so every price can be re-rendered live
+  // when the currency switches. Mirrors Currency::render() on the PHP side.
+  function currencyState() {
+    return window.FM_CURRENCY || { code: "USD", rate: 1, currencies: { USD: { symbol: "$" }, EUR: { symbol: "€" } } };
+  }
+
+  function convertUsd(usd) {
+    var s = currencyState();
+    return s.code === "EUR" ? Number(usd) * Number(s.rate || 1) : Number(usd);
+  }
+
+  function currencySymbol() {
+    var s = currencyState();
+    return (s.currencies && s.currencies[s.code] && s.currencies[s.code].symbol) || "$";
+  }
+
+  function formatAmount(value) {
+    return Number(value).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   function formatPrice(price) {
-    return "$" + Number(price).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    var usd = Number(price);
+    return '<span class="fm-price" data-usd="' + usd.toFixed(2) + '">'
+      + currencySymbol() + formatAmount(convertUsd(usd)) + "</span>";
   }
 
   var ICONS = {
@@ -961,7 +984,44 @@
   }
 
   // ── Boot ───────────────────────────────────────────────────
+  // ── Currency switcher (USD / EUR) ──────────────────────────
+  function initCurrencySwitch() {
+    var group = $("[data-currency-switch]");
+    if (!group) return;
+
+    function applyActive(code) {
+      $all("[data-currency-code]", group).forEach(function (btn) {
+        var on = btn.getAttribute("data-currency-code") === code;
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+        btn.classList.toggle("bg-white", on);
+        btn.classList.toggle("text-brand-800", on);
+        btn.classList.toggle("text-white/80", !on);
+        btn.classList.toggle("hover:text-white", !on);
+      });
+    }
+
+    // Re-render every price on the page into the current currency.
+    function rerenderPrices() {
+      $all(".fm-price[data-usd]").forEach(function (el) {
+        el.textContent = currencySymbol() + formatAmount(convertUsd(el.getAttribute("data-usd")));
+      });
+    }
+
+    group.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-currency-code]");
+      if (!btn) return;
+      var code = btn.getAttribute("data-currency-code");
+      if (!code || code === currencyState().code) return;
+
+      currencyState().code = code;
+      document.cookie = "fm_currency=" + code + "; path=/; max-age=31536000; samesite=lax";
+      applyActive(code);
+      rerenderPrices();
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
+    initCurrencySwitch();
     initAnimations();
     initCounters();
     initMobileMenu();

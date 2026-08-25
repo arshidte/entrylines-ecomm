@@ -5,10 +5,19 @@
  */
 
 if (! function_exists('format_price')) {
-    /** Mirrors formatPrice(): USD with 2 decimals, e.g. "$2.49". */
-    function format_price(float $price): string
+    /**
+     * Formats a USD price. On the storefront ($convert = true) it renders in
+     * the visitor's selected currency via App\Libraries\Currency, wrapping the
+     * value in a span carrying the USD base so it can be re-rendered on switch.
+     * Admin views pass $convert = false to always show plain USD, e.g. "$2.49".
+     */
+    function format_price(float $price, bool $convert = true): string
     {
-        return '$' . number_format($price, 2);
+        if (! $convert) {
+            return '$' . number_format($price, 2);
+        }
+
+        return \App\Libraries\Currency::render($price);
     }
 }
 
