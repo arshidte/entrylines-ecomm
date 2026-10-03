@@ -133,10 +133,10 @@ $categoriesJson = array_map(static fn ($c) => [
                 </div>
                 <div class="flex gap-4">
                     <label class="flex cursor-pointer items-center gap-2 text-sm">
-                        <input type="checkbox" name="isActive" class="size-4 accent-[#2E7D32]"> Active
+                        <input type="checkbox" name="isActive" class="size-4 accent-brand-600"> Active
                     </label>
                     <label class="flex cursor-pointer items-center gap-2 text-sm">
-                        <input type="checkbox" name="isFeatured" class="size-4 accent-[#2E7D32]"> Featured
+                        <input type="checkbox" name="isFeatured" class="size-4 accent-brand-600"> Featured
                     </label>
                 </div>
 

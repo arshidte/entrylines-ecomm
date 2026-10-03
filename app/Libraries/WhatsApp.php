@@ -48,6 +48,50 @@ class WhatsApp
     }
 
     /**
+     * Incoming-webhook configuration. These are infrastructure-level secrets
+     * set once per deployment, so they are read from .env only (unlike the
+     * sending config, which can be overridden in Admin → Settings).
+     *
+     * - verifyToken: the arbitrary string you also enter in App Dashboard →
+     *   WhatsApp → Configuration → "Verify token"; echoed during the GET
+     *   verification handshake.
+     * - appSecret: your Meta app secret, used to validate the signature Meta
+     *   attaches to every POST (X-Hub-Signature-256).
+     */
+    public static function webhookConfig(): array
+    {
+        return [
+            'verifyToken' => trim((string) env('WHATSAPP_WEBHOOK_VERIFY_TOKEN', '')),
+            'appSecret'   => trim((string) env('META_APP_SECRET', '')),
+        ];
+    }
+
+    /**
+     * Validates Meta's X-Hub-Signature-256 header against the raw request body
+     * using the app secret. Returns true when the signature matches. When no
+     * app secret is configured, verification is disabled (returns true) so the
+     * endpoint still works, but a warning is logged.
+     */
+    public static function verifySignature(string $rawBody, ?string $header): bool
+    {
+        $secret = self::webhookConfig()['appSecret'];
+
+        if ($secret === '') {
+            log_message('warning', '[whatsapp] META_APP_SECRET not set — webhook signature verification is disabled.');
+
+            return true;
+        }
+
+        if ($header === null || ! str_starts_with($header, 'sha256=')) {
+            return false;
+        }
+
+        $expected = 'sha256=' . hash_hmac('sha256', $rawBody, $secret);
+
+        return hash_equals($expected, $header);
+    }
+
+    /**
      * Sends the order alert for an enquiry. Returns a result array and
      * never throws.
      */

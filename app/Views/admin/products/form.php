@@ -168,7 +168,7 @@ $weightOptionsStr = $isEdit ? implode(', ', weight_options($product['weightOptio
                 <div class="grid grid-cols-1 gap-1">
                     <?php foreach ($flagFields as [$key, $label]): ?>
                         <label class="flex cursor-pointer items-center gap-2.5 rounded-xl px-2 py-1.5 text-sm text-ink-soft transition-colors hover:bg-brand-50">
-                            <input type="checkbox" name="<?= $key ?>"<?= $flagDefault($key) ? ' checked' : '' ?> class="size-4 cursor-pointer accent-[#2E7D32]">
+                            <input type="checkbox" name="<?= $key ?>"<?= $flagDefault($key) ? ' checked' : '' ?> class="size-4 cursor-pointer accent-brand-600">
                             <?= esc($label) ?>
                         </label>
                     <?php endforeach ?>

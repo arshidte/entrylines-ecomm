@@ -109,7 +109,7 @@ $bannersJson = array_map(static fn ($b) => [
                         <input id="b-sort" name="sortOrder" type="number" value="0" class="fm-input">
                     </div>
                     <label class="flex cursor-pointer items-center gap-2 pb-3 text-sm">
-                        <input type="checkbox" name="isActive" class="size-4 accent-[#2E7D32]"> Active
+                        <input type="checkbox" name="isActive" class="size-4 accent-brand-600"> Active
                     </label>
                 </div>
 
