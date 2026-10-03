@@ -104,9 +104,9 @@ $navLink = static function (string $href, string $label, bool $active): string {
         <!-- Main glass bar -->
         <div class="glass shadow-glass">
             <div class="mx-auto max-w-7xl px-4 sm:px-6">
-                <div class="flex h-16 items-center justify-between gap-4 lg:h-17">
+                <div class="flex h-20 items-center justify-between gap-4 lg:h-28">
                     <a href="<?= site_url('/') ?>" class="flex shrink-0 items-center" aria-label="EntryLines Holdings home">
-                        <img src="<?= base_url('assets/img/logo.png') ?>" alt="EntryLines Holdings" class="h-9 w-auto lg:h-10">
+                        <img src="<?= base_url('assets/img/logo.png') ?>" alt="EntryLines Holdings" class="h-12 w-auto lg:h-20">
                     </a>
 
                     <?= view('partials/search_bar', ['class' => 'hidden max-w-xl md:block']) ?>

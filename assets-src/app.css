@@ -13,17 +13,17 @@
 
 @theme {
   /* Brand palette */
-  --color-brand-50: #f0f7f0;
-  --color-brand-100: #dcefdd;
-  --color-brand-200: #badfbc;
-  --color-brand-300: #8cc790;
-  --color-brand-400: #5aa960;
-  --color-brand-500: #388e3c;
-  --color-brand-600: #2e7d32;
-  --color-brand-700: #25652a;
-  --color-brand-800: #1f5123;
-  --color-brand-900: #1a431e;
-  --color-brand-950: #0c2410;
+  --color-brand-50: #f3f0f7;
+  --color-brand-100: #e4dbef;
+  --color-brand-200: #cbbce0;
+  --color-brand-300: #ac95cc;
+  --color-brand-400: #8d6eb5;
+  --color-brand-500: #65498C;
+  --color-brand-600: #5a3f7f;
+  --color-brand-700: #4c346c;
+  --color-brand-800: #3f2d57;
+  --color-brand-900: #342646;
+  --color-brand-950: #1e142b;
 
   --color-cream: #fffdf7;
   --color-cream-dark: #faf7ec;

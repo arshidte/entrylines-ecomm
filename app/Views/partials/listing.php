@@ -35,7 +35,7 @@ $checkbox = static function (string $key, string $value, string $label, array $p
 
     return '<label class="flex cursor-pointer items-center gap-2.5 py-1 text-sm text-ink-soft transition-colors hover:text-ink">'
         . '<input type="checkbox" data-filter-param="' . $key . '" data-filter-value="' . $value . '"' . ($checked ? ' checked' : '')
-        . ' class="size-4 cursor-pointer rounded accent-[#2E7D32]">'
+        . ' class="size-4 cursor-pointer rounded accent-brand-600">'
         . esc($label) . '</label>';
 };
 

@@ -35,7 +35,7 @@ $isActive = static fn (string $href): bool => $href === 'admin'
     <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
 </head>
 <body class="antialiased">
-<div class="min-h-dvh bg-[#f4f6f2]">
+<div class="min-h-dvh bg-brand-50">
     <!-- Sidebar -->
     <aside class="fixed inset-y-0 left-0 z-30 hidden w-60 flex-col bg-brand-950 text-white lg:flex">
         <div class="flex h-16 items-center gap-2 border-b border-white/10 px-4">
